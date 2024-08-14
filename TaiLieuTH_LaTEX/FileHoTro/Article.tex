@@ -1,0 +1,107 @@
+\documentclass[a4paper]{article}
+
+%Bộ thư viện hỗ trợ tiếng Việt
+\usepackage[utf8]{inputenc}
+\usepackage[vietnam]{babel}
+
+%YÊU CẦU 1: Biên dịch ra file pdf và xem kết quả
+
+%YÊU CẦU 3.1: Tạo một lệnh mới cho phần Từ khóa, lần lượt thử từng câu lệnh sau
+%\newcommand{\Keywords}[1]{Từ khóa: #1}
+%\newcommand{\Keywords}[1]{\hfill\\ \noindent {\em Từ khóa}: #1}
+
+%Thư viện giúp hiển thị các kí tự đặc biệt, vd kí tự *
+\usepackage{pifont}
+
+%YÊU CẦU 4.2: Hãy thử câu lệnh dưới đây, thay bằng các số 1, 2, 3, 4, 5 và xem kết quả
+%\setcounter{secnumdepth}{4} %Thay đổi cấp độ đánh số thứ tự trong phần section, subsection ..., 
+
+%YÊU CẦU 5.2: Hãy thử câu lệnh dưới đây, thay bằng các số 1, 2, 3, 4, 5 và xem kết quả
+%\setcounter{tocdepth}{3} %Thay đổi cấp độ trong phần Mục lục
+
+\begin{document}
+
+%-----PHẦN TỰA ĐỀ VÀ THÔNG TIN TÁC GIẢ----
+\title{Viết một bài báo khoa học bằng \LaTeX}
+
+\author{
+%Tác giả thứ 1
+ĐĐKhoa \\ Khoa CNTT\\ ĐH KHTN HCM\\ Việt Nam\\ \texttt{ddkhoa@fit.hcmus.edu.vn}
+%YÊU CẦU 2.1: Giả sử bạn là đồng tác giả bài này, hãy thêm thông tin của bạn vào 
+%\and 
+%
+}
+
+%YÊU CẦU 2.2: Thêm ngày hiện tại vào
+%\date{\today} %chèn ngày hiện tại
+\date{}
+\maketitle
+
+%-----PHẦN TÓM TẮT NỘI DUNG----
+\begin{abstract}
+Phần này tóm tắt nội dung chính của bài báo. Từ chuyên ngành gọi là phần ``Abstract''. %Chú í chỗ dấu nháy kép, ko phải "..." mà là ``..."
+
+%YÊU CẦU 3.2: (Phần từ khóa) Liệt kê những từ khóa quan trọng liên quan đến chủ đề này
+\keywords{Article, LaTex, \ldots}
+\end{abstract}
+
+%-----PHẦN MỤC LỤC----
+%YÊU CẦU 5.1: Thêm mục lục
+%\tableofcontents
+%\newpage
+
+%-----PHẦN NỘI DUNG CHÍNH----
+%YÊU CẦU 4.1: Đọc nội dung của phần này
+\section{Giới thiệu}
+\indent \indent Phần tiếp theo 		là phần Giới thiệu\indent , trong tiếng Anh gọi là ``Introduction''. Phần này tóm tắt các nghiên cứu đã có từ trước tới giờ liên quan đến vấn đề mà tác giả đang nghiên cứu. Những nghiên cứu ấy còn thiếu sót chỗ nào, tại sao tác giả thực hiện việc nghiên cứu này? ... Cuối cùng là trình bày cấu trúc của bài báo gồm những phần nào \ldots 
+
+\subsection{Tiêu đề cấp 2}
+Đây là một phần nội dung nhỏ, gọi là sub-section, nằm trong phần section.
+
+\subsubsection{Tiêu đề cấp 3}
+Đây là phần nội dung nhỏ hơn nữa, gọi là sub-sub-section nằm trong phần sub-section.
+
+\paragraph{Tiều đề cấp 4}
+Đổi khi có một số nội dung trong bài báo cần định dạng theo kiểu này, gọi là paragraph.
+
+\subparagraph{Tiêu đề cấp 5 - Hết chịu nổi rồi!}
+Đây là một phần nội dung nhỏ hơn nữa. Có thể xem là cấp độ nhỏ nhất trong định dạng. Hầu như không bào giờ người ta chia nhỏ nội dung phần này ra nữa. Cho nên đến đây là hết rồi.
+
+\section{Các phương pháp cũ}
+Trong phần này, tác giả sẽ trình bày lại các phương pháp cũ, đã có, tiêu biểu, nền tảng cho những cải tiến của tác giả... Trong các phần sau tác giả sẽ trình bày các cải tiến của mình.
+
+Trong phần này nếu cần thì cũng có thể chia thành các section, sub-section, sub-sub-\ldots tùy vô nội dung mà tác giả muốn trình bày.
+
+\section{Phương pháp đề xuất của tác giả}
+Trong phần này, tác giả trình bày các cải tiến của mình, hoặc đề xuất một phương pháp mới tốt hơn những phương pháp cũ.
+
+
+Như bạn có thể thầy, \LaTeX\  tự động thêm số thứ tự các phần cho mình, từ canh đầu dòng đều và đẹp mắt, chuyên nghiệp, \ldots Cho nên 
+khó mà tạo ra một
+văn bản trình bày 
+lung 
+tung
+beng
+như 		vầy.
+\section{Các thực ngiệm và kết quả}
+Trình bày các kết quả thực nghiệm theo phương pháp tác giả đã đề xuất.
+
+\appendix %Tạo phụ lục
+\section{Phụ lục A}
+Đây là phần phụ lục, trình bày các kiến thức liên quan giúp người đọc dễ hiểu nội dung bài báo của tác giả hơn. Phần này có thể có hoặc không.
+
+\section{Phụ lục B}
+Gì gì đó\ldots
+
+\subsection*{Lời cảm ơn}
+Nếu bạn cần một đề mục nào đó mà không cần đánh số thứ tự, chỉ việc thêm dấu \ding{83} vào phía trước section, subsection, hay subsubsection\ldots Những phần này sẽ không được thêm vào trong phần mục lục.
+
+\section*{Tài liệu tham khảo}
+%YÊU CẦU 5.3: Thêm phần này vào trong mục lục
+%\addcontentsline{toc}{Tài liệu tham khảo}{Tham khảo \hfill}
+
+Phần cuối cùng thường là danh mục các tài liệu tác giả đã đọc, sử dụng khi nghiên cứu về vấn đề trong bài báo này. 
+Tuy nhiên phần này bạn chưa thực hiện vội, vì bạn chưa học phần Tham chiếu chéo (Cross-reference). Đừng manh động!
+Phần này cũng không cần đánh số thứ tự. Nhưng nếu bạn muốn thêm phần này vào trong mục lục thì dùng câu lệnh như phía trên.
+
+\end{document}

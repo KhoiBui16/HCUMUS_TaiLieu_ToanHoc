@@ -1,0 +1,46 @@
+\documentclass{letter} %viết thư
+
+%Hỗ trợ gõ tiếng việt
+\usepackage[utf8]{inputenc}
+\usepackage[vietnam]{babel}
+
+%chữ ký cuối thư
+\signature{Khăn Đỏ} 
+
+%địa chỉ người gởi
+\address{227 Nguyễn Văn Cừ \\ Quận 1 \\ Tp Hồ Chí Minh, Việt Nam} 
+%ngày tháng sẽ tự động được thêm vô
+
+\begin{document}
+
+%Bắt đầu một lá thư
+\begin{letter}{ Khăn Quàng Đỏ\\Bà ngoại của Khăn Đỏ\\ Nhà ở trong rừng\\Kế bên hồ  nước \& Trước nhà có cây ớt} %Danh tính người nhận
+
+%Lời chào đầu thư
+\opening{Bà ngoại thân mến:}
+
+%Nội dung thư, chú ý chỗ các khoảng trắng và xuống dòng tùy tiện sẽ ko được hiển thị
+		Cháu		mới     nấu 
+xong 
+món
+cà-ri chuối 
+	và có nấu cho bà 1 thau. 
+Cháu sẽ mang 			cho bà 	vào ngày mai. 
+
+%Muốn bắt đầu 1 đoạn mới thì chừa 1 dòng trắng
+Hy vọng bà ăn được.\\[0.7cm] %hoặc sử dụng 2 dấu xuyệt để xuống dòng
+Moaz!
+
+\closing{Cháu yêu của bà} %Lời chào cuối thư
+
+%Tái bút
+\ps{Tái bút: Nếu ăn không hết thì bà cho chó sói ăn đừng bỏ uổng!}
+
+%Tài liệu gởi kèm theo thư
+\encl {Công thức nấu món cà-ri chuối\\ Hình ảnh món cà-ri chuối\\ Địa chỉ bệnh viện gần nhất} 
+\end{letter}
+
+%YÊU CẦU 1: Viết tiếp lá thư thứ 2 thì viết tiếp ở đây
+%\begin{letter}{ ... }
+
+\end{document}

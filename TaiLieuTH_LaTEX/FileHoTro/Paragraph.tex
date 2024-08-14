@@ -1,0 +1,165 @@
+\documentclass{article}
+
+%Bộ thư viện hỗ trợ tiếng Việt
+\usepackage[utf8]{inputenc}
+\usepackage[vietnam]{babel}
+
+%Thư viên hỗ trợ chỉnh khoảng cách giữa các dòng trong đoạn văn
+\usepackage{setspace}
+
+%YÊU CẦU 5.2: Định dạng liên kết, hãy thử các câu lệnh với giá trị sau
+%\usepackage{hyperref}
+%\hypersetup{colorlinks=true,%thử đổi thành false
+%linkcolor=green,
+%pdftex}
+
+%Thư viện hỗ trợ liên kết tới trang web
+\usepackage{url}
+\usepackage{hyperref}
+
+
+\usepackage{pifont}
+
+\begin{document}
+
+\section{ĐỊNH DẠNG KHOẢNG CÁCH}
+%Khoảng cách giữa mỗi đoạn là 0.5cm
+\setlength{\parskip}{0.5cm} 
+
+%Thụt vào đầu dòng 0.3cm
+\setlength{\parindent}{0.3cm} 
+
+%YÊU CẦU 1: Chỉnh khoảng cách giữa các dòng
+\setstretch{1.6}
+%\doublespacing
+%\singlespacing
+%\onehalfspacing
+Đây là đoạn văn thứ 1. Đây là đoạn văn thứ 1. Đây là đoạn văn thứ 1. Đây là đoạn văn thứ 1.
+
+Đây là đoạn văn thứ 2. Đây là đoạn văn thứ 2. Đây là đoạn văn thứ 2. Đây là đoạn văn thứ 2. Đây là đoạn văn thứ 2.
+
+Đây là đoạn văn thứ 3. Đây là đoạn văn thứ 3. Đây là đoạn văn thứ 3. Đây là đoạn văn thứ 3. Đây là đoạn văn thứ 3.
+
+\section{CANH LỀ ĐOẠN VĂN: Cách 1 - Sử dụng ENVIRONMENT}
+%Mặc định là tự canh đều 2 bên
+\begin{minipage}{2in} %Tạo 1 khung soạn thảo văn bản nhỏ 2x2 inches
+Tất cả đoạn văn mặc định được canh đều 2 bên. Tất cả đoạn văn mặc định được canh đều 2 bên. Tất cả đoạn văn mặc định được canh đều 2 bên. Tất cả đoạn văn mặc định được canh đều 2 bên.
+\end{minipage}
+
+\begin{minipage}{2.3in} 
+\begin{center}%Canh giữa
+Đoạn văn này được canh giữa. Đoạn văn này được canh giữa. Đoạn văn này được canh giữa. Đoạn văn này được canh chính giữa.
+\end{center}
+\end{minipage}
+
+\begin{minipage}{2.5in}
+\begin{flushleft}  %Canh đều bên trái
+Đoạn văn này được canh đều bên trái. Canh đều bên trái. Đoạn văn này đềuuu bên trái. Đoạn văn này được canh đều bên trái.
+\end{flushleft}
+\end{minipage}
+
+\begin{minipage}{2.7in}
+\begin{flushright}  %Canh đều bên phải
+Đoạn văn này được canh đều bên phải. Canh đều bên phải. Đoạn văn này đềuuu bên phải. Đoạn văn này được canh đều bên phải.
+\end{flushright}
+\end{minipage}
+
+\section{CANH LỀ ĐOẠN VĂN: Cách 2 - Dùng LỆNH}
+%YÊU CẦU 2: Canh lề đoạn văn sử dụng lệnh
+\begin{minipage}{2.4in}
+
+Tất cả đoạn văn mặc định được canh đều 2 bên. Tất cả đoạn văn mặc định được canh đều 2 bên. Tất cả đoạn văn mặc định được canh đều 2 bên.\\
+
+Đoạn văn này được canh bên trái. Đoạn văn này canh bên trái. Đoạn văn này được canh đều bên trái.\\
+
+Đoạn văn này được canh đều bên phải. Canh đều bên phải. Đoạn văn này đềuuu bên phải. \\
+
+Đoạn văn này được canh giữa. Đoạn văn này được canh giữa. Đoạn văn này được canh giữa. Đoạn văn này được canh chính giữa.
+\end{minipage}
+
+\section{DANH SÁCH}
+\subsection{Danh sách đánh số thứ tự}
+\begin{enumerate}
+%\setcounter{enumi}{5} %Bắt đầu đánh số từ 6
+	\item Xoài\\
+		Ta có thể thêm dòng chữ bất kỳ vào giữa chừng.
+	\item Cam
+	\item Mận etc \ldots
+\end{enumerate}
+
+\subsection{Thay đổi cách đánh số thứ tự}
+%YÊU CẦU 3.2: Thay đổi cách đánh số thứ tự trong danh sách
+%Danh sách cấp 1
+%\renewcommand{\theenumi}{\Roman{enumi}/}
+%\renewcommand{\labelenumi}{\theenumi} 
+%Danh sách cấp 2
+%\renewcommand{\theenumii}{\Alph{enumii}:}
+%\renewcommand{\labelenumii}{\theenumii}
+
+%YÊU CẦU 3.1: Tạo danh sách con cấp 2, đồng thời thay đổi cách đánh số
+\begin{enumerate}
+	\item Học soạn thảo văn bản thì phải biết:
+\end{enumerate}
+
+\subsection{Tạo danh sách chỉ mục}
+\begin{itemize}
+	\item Đi chợ
+	\item Rửa chén
+	\item Nấu cơm \ldots \\
+\end{itemize}
+
+\subsection{Tạo danh sách sử dụng cụm từ bất kỳ}
+\begin{description}
+	\item[Điều thứ nhứt] 
+	Vợ luôn luôn đúng!
+	\item[Điều thứ hai] Nếu vợ sai, đọc điều lệ tiếp theo \ldots
+	\item[Điều thứ ba] \hfill \\Xem lại điều lệ thứ nhứt!
+	\item[Kết luận] \hfill\\ Chính xác!!!
+\end{description}
+
+\subsection{Sử dụng các ký tự đặc biệt khác để tạo danh sách}
+\renewcommand{\labelitemi}{\ding{170}}
+\begin{itemize}
+	\item Coi nè!
+	\item Thấy chưa!
+\end{itemize}
+
+\section{CHÚ THÍCH VĂN BẢN}
+%YÊU CẦU 4: Thêm vào một chú thích văn bản khác
+Tạo chú thích trong văn bản\footnote{Cái này gọi là chú thích văn bản.} thật là dễ quá đi.
+
+\section{TẠO SIÊU LIÊN KẾT - URL}
+Tạo liên kết kiểu này \url{http://en.wikibooks.org/wiki/LaTeX/Hyperlinks} sẽ thấy rõ đường dẫn đến trang web.\\
+%YÊU CẦU 5.1: Đổi tên cụm từ đại diện của siêu liên kết này
+Tại liên kết theo kiểu này \href{http://en.wikibooks.org/wiki/LaTeX/Hyperlinks}{Wikibooks/Hyperlinks} cho phép dùng một cụm từ thay thế.
+
+\section{TRÍCH DẪN NGUYÊN VĂN}
+Ai đó nói rằng:
+%Thường dùng cho những câu trích dẫn ngắn, chú ý chỗ dấu nháy kép
+\begin{quote}
+``Yêu là chết trong lòng một ít\ldots"
+\end{quote}
+\begin{quote}
+`Yêu là cho, đâu chỉ nhận riêng mình.'
+\end{quote}
+
+%Dùng cho những câu chú thích dài, có lùi đầu dòng mỗi đoạn
+\begin{quotation}
+"\LaTeX có 2 cách để tạo câu trích dẫn chúng có vẻ giống nhau nhưng thật ra hơi khác nhau một tí. Tùy vào mục đích sử dụng mà ta chọn loại nào cho thích hợp."
+\end{quotation}
+\begin{quotation}
+`Tạo trích dẫn theo cách này thì có lùi đầu dòng nữa nè.'
+\end{quotation}
+
+\section{GIỮ NGUYÊN VĂN BẢN GỐC}
+%Giữ nguyên các chỗ xuống dòng, khoảng trắng, ... do người dùng tự định dạng. Các lệnh định dạng nằm trong đây đều vô tác dụng.
+\begin{verbatim} 
+%Ngay cả dòng chú thích cũng bị lộ diện
+Sử dụng verbatim
+sẽ làm cho tất cả lệnh định dạng \emph{lộ diện} và tất cả những gì bạn gõ vào
+kể cả k h o ả n g   t r ắ n g.
+\end{verbatim}
+
+Nếu chỉ cần một vài chỗ giữ đúng văn bản gốc thì ta không cần dùng \emph{verbatim} làm gì. Bạn chỉ cần dùng lệnh \verb=\emph{này}= là được.
+
+\end{document}

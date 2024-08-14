@@ -1,0 +1,53 @@
+\begin{titlepage} %Trang bìa
+
+\begin{center} %Canh giữa
+
+%YÊU CẦU 3: Chèn hình minh họa, phần này sẽ được trình bày kỹ hơn trong phần Chèn hình ảnh
+\includegraphics[width=3cm]{logo}\\[1cm]
+
+%Định dạng chữ, phần này sẽ được trình bày kỹ hơn trong phần Định dạng chữ
+\textsc{\LARGE Đại học Khoa Học Tự Nhiên}\\[1.5cm]
+\textsc{\Large bài tập mẫu}\\[0.5cm]
+
+\HRule \\[0.3cm]
+{ \huge \bfseries Tạo trang bìa với \LaTeX}\\[0.4cm]
+\HRule \\[1.5cm]
+
+%Thông tin tác giả
+\begin{minipage}{4cm}%Tạo một textbox có kích thước 5cm x 5cm
+\begin{flushleft} %Canh đều bên trái
+\large \emph %Định dạng chữ
+{Author:}\\
+John \textsc{Smith}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{4cm}
+\begin{flushright}
+\large \emph
+{Supervisor:} \\
+Dr. Mark \textsc{Brown}
+\end{flushright}
+\end{minipage}
+
+\hfill\\[0.3cm]
+
+\begin{minipage}{4cm}%Tạo một textbox có kích thước 5cm x 5cm
+\begin{flushleft} %Canh đều bên trái
+\large \emph %Định dạng chữ
+{Tác giả thứ 3:}\\
+Khoa \textsc{Đặng}
+\end{flushleft}
+\end{minipage}
+%YÊU CẦU 3: Giả sử bạn là tác giả thứ 4, hãy thêm thông tên mình vào
+\begin{minipage}{4cm}
+\begin{flushright}
+
+\end{flushright}
+\end{minipage}
+\vfill %Chèn một khoảng trống đên cuối trang
+
+%Thêm ngày tháng
+{\large \today}
+
+\end{center}
+\end {titlepage}

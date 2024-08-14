@@ -1,0 +1,74 @@
+\documentclass{article}
+\usepackage[utf8]{vietnam}
+\usepackage{hyperref}
+\usepackage{emerald}
+%Hãy thử thay đổi font chữ mặc định
+%\renewcommand{\rmdefault}{cmtt}
+
+\begin{document}
+
+%Tựa đề
+\begin{flushleft}
+\textsc{\LARGE Thay đổi kiểu chữ trong \LaTeX}\\[0.3cm]
+\bfseries{\large Walter Schmid}\\[1cm]
+\end{flushleft}
+
+\textnormal
+{
+\begin{tabular}{r l}
+Tóm tắt & Tài liệu trình bày một vài lệnh cơ bản giúp thay đổi kiểu chữ\\
+\end{tabular}
+}
+
+\section{Một số lệnh cơ bản}
+
+\subsection{Phông chữ:}
+\begin{tabular}{r l}
+%\verb$\rmfamily$ & \rmfamily{selects a roman font family}\\
+%\verb$\ttfamily$  & \ttfamily {selects a monospaced (“typewriter”) font family}\\
+%\verb$\sffamily$  & \sffamily{selects a sans serif font family}\\
+
+\verb$\ptm$ & \fontfamily{ptm}\selectfont Đây là phông chữ Adobe Times.\\
+\verb$\phv$ & \fontfamily{phv}\selectfont Đây là phông chữ Adobe Helvetica.\\
+\verb$\pcr$ & \fontfamily{pcr}\selectfont Đây là phông chữ Adobe Courier.\\
+\verb$\ppl$ & \fontfamily{ppl}\selectfont Đây là phông chữ Palatino.\\
+\verb$\pag$ & \fontfamily{pag}\selectfont Đây là phông chữ AvantGarde.\\
+\verb$\cmr$ & \fontfamily{cmr}\selectfont Đây là phông chữ New Century Schoolbook.\\
+\verb$\cmss$ & \fontfamily{cmss}\selectfont Đây là phông chữ Computer Modern Sans.\\
+\verb$\cmtt$ & \fontfamily{cmtt}\selectfont Đây là phông chữ Computer Modern Typewriter.
+\end{tabular}
+\\[0.2cm]
+
+\subsection{Thay đổi hình dạng chữ:}
+\begin{tabular}{r l}
+\verb$\mdseries$ & \mdseries {Chữ thường}\\
+\verb$\bfseries$ & \bfseries{Chữ in đậm} \\
+\end{tabular}
+\\[0.2cm]
+
+\subsection{Thay đổi hình dáng chữ:}
+\begin{tabular}{r l}
+\verb$\upshape$ & \upshape {Thẳng đứng}\\
+\verb$\slshape$ & \slshape {Nghiên}\\
+\verb$\itshape$ & \itshape {Nghiên kiểu khác}\\
+\verb$\scshape$ & \scshape {Chữ hoa kích thước nhỏ}\\
+\end{tabular}
+
+\section{Thay đổi kiểu chữ mới}
+\setlength{\parindent}{0pt}
+
+\fontfamily{pcr}
+\fontseries{b}
+\fontshape{it}
+\selectfont  Một loại kiểu chữ mới
+
+%Trả lại kiểu chữ mặc định
+\fontencoding{\encodingdefault}
+\fontfamily{\familydefault}
+\fontseries{\seriesdefault}
+\fontshape{\shapedefault}
+\selectfont
+Kiểu chữ mặc định
+
+Để xem thêm các kiểu chữ mới, bạn có thể tham khảo \href{http://www.tug.dk/FontCatalogue/}{trang web này.}
+\end{document}

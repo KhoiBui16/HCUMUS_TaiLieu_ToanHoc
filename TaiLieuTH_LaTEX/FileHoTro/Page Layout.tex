@@ -1,0 +1,96 @@
+\documentclass{article}
+%\documentclass[twoside]{article}
+
+\usepackage{graphicx}
+%YÊU CẦU 1: Thay đổi kích thước trang bằng một trong các câu lệnh dưới đây
+%\usepackage[a4paper]{geometry}
+%\usepackage[right=0.5cm]{geometry}
+%\usepackage[voffset= 5cm, textheight=33cm]{geometry}
+%\usepackage[paperheight=70cm]{geometry}
+
+%Thư viện hổ trợ tạo trang nằm ngang
+\usepackage{pdflscape}
+%YÊU CẦU 5: Chỉnh hướng trang nằm ngang cho trang đầu tiên
+%\usepackage[landscape]{geometry}
+
+%YÊU CẦU 2: Tạo tiêu đề đầu trang và cuối trang cho các trang chẵn và lẻ khác nhau, chỉnh độ dầy đường phân cách tiêu đề đầu và cuối trang
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{left header}
+\chead{centered header}
+\rhead{right header}
+\lfoot{This is page \thepage}
+\cfoot{centered footer}
+\rfoot{\today}
+%YÊU CẦU 3: Điều chỉnh độ dày của đường phân cách
+\renewcommand{\headrulewidth}{0mm} %Độ dầy đường phân cách tiêu đề đầu trang
+\renewcommand{\footrulewidth}{0mm} %Độ dầy đường phân cách tiêu đề cuối trang
+
+%Thư viện hỗ trợ chia cột
+\usepackage{multicol}
+
+\begin{document}
+
+%YÊU CẦU 4: Chia lại thành 10 cột và chỉnh độ dày đường phân cách giữa các cột
+\begin{multicols}{3} 
+%\setlength{\columnseprule}{1pt} %Kẻ đường phân cách các cột
+But a new battle -- to attract more visitors to the historic site and boost the impoverished region's earnings from tourism -- is tough going for the descendants of the triumphant troops.
+
+Efforts to restore the weaponry and other reminders of combat are slowly attracting more travelers, helped by improved road access, according to local tourism officials.
+
+Yet the remote area in northwestern Vietnam on the Lao border is still struggling to meet its goal of making tourism the leading industry in the province.
+
+"Most of our clients, notably foreigners, have deplored the bad state of infrastructure and the quality of service here," said Tran Thu Nga, 47, who operates the small May Hong hotel in Dien Bien city, the provincial capital.
+
+"We don't have as many geographic and logistical advantages as our colleagues" at the country's popular coastal beach resorts, she said.
+
+Those who make the effort to reach Dien Bien Phu find that authorities have preserved many reminders of the 56-day battle, which ended on May 7, 1954 and was the critical event in Vietnam's emergence as an independent nation.
+
+"This is one of the places where the wars in Indochina are clearly represented" with a full display of relics, visiting Australian David Smith said. "It was a decisive battle... makes for more of a landmark, I suppose."
+
+The bearded lawyer said he stopped in Dien Bien city on his way to Laos from the better-known tourist destination of Sapa, and it was a shame that other Westerners on his bus just continued on.
+
+One complaint is about the lack of English spoken in the historic locale -- unlike Vietnam's bigger cities or resorts.
+
+"It was difficult to get a menu last night," Smith said.
+
+Signs at the war relics are only in Vietnamese, not English or French, which is rarely spoken in the country these days.
+
+Vietnam's National Tourism Administration has acknowledged that service standards need to be improved in the country, which saw five million visitors last year, a figure far below Thailand and other neighbors.
+
+The battle at Dien Bien Phu saw the forces of legendary General Vo Nguyen Giap -- who marked his 100th birthday on August 25 -- haul artillery through the jungle to pound the French led by Colonel Christian de Castries, whose dank, dimly-lit four-room command bunker has been partially restored.
+
+Much more of the original command site is to be re-created in future, said local tourism official Doan Van Chi.
+
+The battle led to the collapse of France's colonial empire but cost thousands of lives on both sides.
+
+A network of trenches has been re-created on Hill A-1 -- known as "Eliane" to the French -- where some of the most brutal fighting took place.
+
+Soaked in blood during the battle, the site is now a peaceful and park-like memorial in Dien Bien's city centre.
+
+It looks out towards row after row of identical headstones in the distant cemetery for Vietnamese fighters who died.
+
+Near de Castries' bunker, a white obelisk in a peaceful garden commemorates French casualties. Unlike other Dien Bien Phu monuments, this was a private initiative by a Foreign Legionnaire who fought in the battle
+
+Chi says Dien Bien wants to draw not only history buffs but also eco-tourists who can enjoy its natural attractions, as well as people looking to experience local ethnic culture with a homestay.
+
+Most of Dien Bien's 500,000 residents are ethnic Thai and Hmong.
+
+Although there are two flights a day from Hanoi, travelers usually arrive by road and as the route has improved, more are coming, Chi said.
+
+"Even just three years ago, part of the road was still very bad," he said. The winding journey from Hanoi still takes about 11 hours.
+
+Despite its isolation and other challenges, Chi says tourist numbers to the province have "grown remarkably", from more than 70,000 in 2000 to 300,000 last year, although not all visit the war relics.
+
+That figure included 50,000 foreigners -- mostly from France -- about one percent of Vietnam's total number of overseas visitors.
+\end{multicols}
+
+%Dàn trang ngang
+\newpage
+\begin{landscape} %Muốn trang nào nằm ngang thì dùng lệnh này
+\centering %canh giữa cho đẹp
+\begin{figure} %Chèn hình ảnh, sẽ trình bày kĩ hơn trong phần sau
+\includegraphics[scale=3]{mindmap}
+\end{figure}
+\end{landscape}
+\end{document}

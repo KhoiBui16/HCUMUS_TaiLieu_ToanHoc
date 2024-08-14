@@ -1,0 +1,104 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[vietnam]{babel}
+
+\usepackage{hyperref}
+
+\setlength{\parskip}{0.1cm}
+\parindent 0pt
+
+%Thư viện hỗ trợ Subscript cách 1
+\usepackage{fixltx2e}
+
+%Thư viện hỗ trợ định dạng gạch dưới
+%\usepackage{ulem}
+
+\begin{document}
+
+\section{Một vài định dạng cơ bản}
+
+%font style
+
+%chữ thường
+\begin{tabular}{ r l }
+	& chữ thường\\
+
+\verb- - & \\
+
+\verb- - & \\
+
+\verb- - & \\
+
+\verb- - & \\
+
+\verb- - & \\
+
+%Các kiểu gạch dưới này phải sử dụng thêm thư viên ulem
+%\uline{underline}
+%\uwave {wavy underline}
+%\sout {strike out underline}
+
+%chữ superscript
+\verb- - & \\
+\verb- - & \\
+
+%Subscript cách 1
+\verb- - & \\
+
+%Subcript cách 2
+\verb- - & \\
+
+\verb= = & \\
+
+\verb= = & \\%phạm vi, khoảng
+
+\verb= = & \\%dấu gạch ngắt câu
+
+dấu trừ \verb= = & dấu trừ  \\
+
+%dấu 3 chấm
+dấm 3 chấm kiểu này \verb- - & dấm 3 chấm kiểu này \\
+dấm 3 chấm kiểu này \verb- - & dấm 3 chấm kiểu này \\
+
+\verb- - & \\
+\verb- - & \\
+\verb- - & \\
+\end{tabular}
+
+\section{Một vài định dạng đặc biệt hơn}
+\textbf{(Trích từ \href{ftp://mirror.upm.edu.my/ctan/macros/latex/required/psnfss/}{A simple test of PSNFSS2e in new and old encoding})}
+
+\begin{quote}\begin{tabular}{|*{5}{ll|}}\hline
+\`{o} & \verb|\`{o}|  & \~{o}  & \verb|\~{o}|  & \v{o}  & \verb|\v{o}| & \c{o}  & \verb|\c{o}|  & \'{o} & \verb|\'{o}|  \\
+\={o} & \verb|\={o}|  & \H{o}  & \verb|\H{o}| & \d{o}  & \verb|\d{o}| & \^{o}  & \verb|\^{o}|  & \.{o}  & \verb|\.{o}|  \\
+\t{oo} & \verb|\t{oo}| & \b{o}  & \verb|\b{o}| & \"{o} & \verb|\"{o}| & \u{o}  & \verb|\u{o}|  && \\ \hline
+\end{tabular}\end{quote}
+
+\begin{quote}\begin{tabular}{|*{4}{ll|}}\hline
+\dag       & \verb|\dag|       & \S     & \verb|\S|     &
+\copyright & \verb|\copyright|  &\i & \verb|\i|\\
+\ddag      & \verb|\ddag|      & \P     & \verb|\P|     &
+\pounds    & \verb|\pounds|    & {\j} & \verb|\j|\\
+\oe        & \verb|\oe|        & \OE    & \verb|\OE|    &
+\ae        & \verb|\ae|       & & \\
+\AE        & \verb|\AE|        & \aa    & \verb|\aa|    &
+\AA        & \verb|\AA|       && \\
+\o         & \verb|\o|         & \O     & \verb|\O|     &
+\l         & \verb|\l|        && \\
+\L         & \verb|\L|         & \ss    & \verb|\ss|    &
+?`         & \verb|?`|        && \\
+!`         & \verb|!`|         & \ldots & \verb|\ldots| &
+\LaTeX     & \verb|\LaTeX|    && \\
+\hline
+\end{tabular}\end{quote}
+{This costs `\pounds' 45 to do; {\sffamily this costs \pounds 45 to do;
+\em this costs \pounds 45 in sans italic to do;}
+\scshape this costs ``\pounds'' 45 to do; \em this costs \pounds 45 to do
+\bfseries this costs \pounds 45 to do for a f\'ee. And so on.}
+The s\=un has got his h\=at in, hip hip hip hooray! !`THE DAZED BROWN
+FOX QUICKLY GAVE 12345--67890 JUMPS! --- ?`But aren't Kafka's
+Schlo{\ss} and {\AE}sop's {\OE}uvres often na{\"\i}ve vis-\`{a}-vis
+the d{\ae}monic ph{\oe}nix's official r\^{o}le in fluffy souffl\'{e}s?
+
+\end{document}
